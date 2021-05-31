@@ -1,6 +1,16 @@
+.tool{
+  padding: 11px 30px;
+  box-shadow: 0px 2px 6px 0 rgba(88, 92, 101, 0.3);
+  background-color: #ffffff;
+}
+
+.fc{
+  padding-top: 25px;
+}
+
 .ab{
   // width: 108px;
-  // height: 38px;
+  height: 38px;
   // margin: 12px 131px 0 28px;
   // padding: 14px 16px 13px 15px;
   // border-radius: 5px;
@@ -447,7 +457,7 @@
 
 }
 .Layer-138 {
-  width: 140px;
+  // width: 140px;
   height: 42px;
   // margin: 0 40% 0 0;
 }
@@ -471,8 +481,9 @@
     background-color: #ffffff;
   }
   .My-Appointments {
-   margin: 10px;
+  //  margin: 10px;
     // margin: 14px 28px 14px 34px;
+    padding: 10px;
     font-family: Archivo;
     font-size: 14px;
     font-weight: normal;
@@ -487,7 +498,7 @@
     // width: 37px;
     // height: 10px;
     // margin: 15px 34px 17px 0px;
-    margin: 10px;
+    // margin: 10px;
     font-family: Archivo;
     font-size: 14px;
     font-weight: normal;
@@ -502,7 +513,8 @@
     // width: 24px;
     // height: 11px;
     // margin: 14px 35px 17px 34px;
-    margin: 10px;
+    // margin: 10px;
+    padding: 10px;
     font-family: Archivo;
     font-size: 14px;
     font-weight: normal;
@@ -517,7 +529,8 @@
     // width: 111px;
     // height: 14px;
     // margin: 14px 34px 14px 28px;
-    margin: 10px;
+    // margin: 10px;
+    padding: 10px;
     font-family: Archivo;
     font-size: 14px;
     font-weight: normal;
@@ -528,10 +541,15 @@
     text-align: center;
     color: #3b4b5f;
   }
+  .menu-spacer {
+    flex: 1 1 auto;
+  }
+  
   .Book-Appointment {
 
     // margin: 14px 36px 14px 35px;
-    margin: 10px;
+    // margin: 10px;
+    padding: 10px;
     font-family: Archivo;
     font-size: 14px;
     font-weight: normal;

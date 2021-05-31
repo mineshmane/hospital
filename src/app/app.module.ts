@@ -7,22 +7,24 @@ import { AppointmentComponent } from './component/appointment/appointment.compon
 import { HomeComponent } from './component/home/home.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatDividerModule, MatIconModule, MatInputModule, MatOptionModule, MatProgressBarModule, MatRadioModule, MatSelectModule, MatSliderModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatDividerModule, MatIconModule, MatInputModule, MatListModule, MatOptionModule, MatProgressBarModule, MatRadioModule, MatSelectModule, MatSidenavModule, MatSliderModule } from '@angular/material';
 import {MatBadgeModule} from '@angular/material/badge';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
+import { ReminderComponent } from './component/reminder/reminder.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppointmentComponent,
-    HomeComponent
+    HomeComponent,
+    ReminderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,MatToolbarModule,MatBadgeModule, BrowserAnimationsModule,MatIconModule,
     MatCardModule,FlexLayoutModule, MatInputModule,FormsModule,MatDividerModule,MatProgressBarModule,
-    MatSliderModule,MatOptionModule,MatSelectModule,MatRadioModule,MatButtonModule
+    MatSliderModule,MatOptionModule,MatSelectModule,MatRadioModule,MatButtonModule,MatSidenavModule, MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

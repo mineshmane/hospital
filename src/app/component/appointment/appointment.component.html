@@ -1,1 +1,436 @@
-<p>appointment works!</p>
+
+<div class="box3" fxLayout='row' fxLayout.sm='column' fxLayout.xs='column'   fxLayoutAlign='center center' fxFlex=100>
+
+    <mat-card fxFlex=100 fxLayout='column' fxLayoutAlign='center center' class="card3">
+  
+
+
+        <div fxLayout='row wrap'>
+            <div class="selectcard" fxFlex.xs=100>
+              <mat-form-field class="example-full-width" style="width: 320px;" fxFlex.xs=100>
+                <input matInput placeholder="location" value="City,state or Zip">
+                <mat-icon matSuffix>search</mat-icon>
+              </mat-form-field>
+            </div>
+        
+        
+            <div class="selectcard" fxFlex.xs=100>
+              <!-- <mat-progress-bar mode="determinate" value="40"></mat-progress-bar> -->
+              <section class="example-section" fxFlex.xs=100>
+                <label class="example-margin wd">Within Distance</label>
+                <mat-slider class="slider" style="width: 320px;"  [(ngModel)]="value"></mat-slider>
+              </section>
+        
+            </div>
+            <div class="selectcard"  fxFlex.xs=100>
+              <mat-form-field style="width: 250px;" fxFlex.xs=100>
+                <mat-label class="lbj">Select Specialities</mat-label>
+                <mat-select [(ngModel)]="selectedValue" name="food">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="selectcard"  fxFlex.xs=100>
+              <mat-form-field style="width: 200px;"  fxFlex.xs=100>
+                <mat-label>Insurance</mat-label>
+                <mat-select [(ngModel)]="selectedValue" name="food">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="selectcard"  fxFlex.xs=100>
+              <mat-form-field style="width:220px"  fxFlex.xs=100>
+                <mat-label>Select languages</mat-label>
+                <mat-select [(ngModel)]="selectedValue" name="food">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="selectcard" fxLayout='column'  fxFlex.xs=100>
+              <mat-label class="wd">Gender</mat-label>
+        
+              <mat-radio-group aria-label="Select an option" fxLayoutGap="2px"  fxFlex.xs=100>
+        
+                <mat-radio-button value="m">Male</mat-radio-button>
+                <mat-radio-button value="f">Female</mat-radio-button>
+              </mat-radio-group>
+            </div>
+            <div class="selectcard"  fxFlex.xs=100>
+              <mat-form-field style="width: 300px;"  fxFlex.xs=100>
+                <mat-label>Select Affiliations</mat-label>
+                <mat-select [(ngModel)]="selectedValue" name="food">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="selectcard"  fxFlex.xs=100>
+              <mat-form-field style="width: 230px;"  fxFlex.xs=100>
+                <mat-label>Select Provider Types</mat-label>
+                <mat-select [(ngModel)]="selectedValue" name="food">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="selectcard"  fxFlex.xs=100>
+              <mat-form-field style="width: 240px;"  fxFlex.xs=100>
+                <mat-label>Select Provider Sub Types</mat-label>
+                <mat-select [(ngModel)]="selectedValue" name="food">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="selectcard">
+              <button mat-raised-button style="background-color: #1fa4dd;;" class="bbtton s">Reset Filters</button>
+        
+        
+            </div>
+        
+          </div>
+    
+        <div class="Records-Found"> 8 Record found</div>
+        <div fxLayout='row wrap' >
+    
+    
+          <div class="cards" fxFlex.xs=100>
+            <div fxLayout='row'>
+              <img id="imgProfile " class="Layer-94" src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg">
+              <div>
+                <div class="drname ">Dr. John Diego,<span class="drtxt"> M(35)</span></div>
+                <div class="degree">M. D. Medicine, Children Specialist</div>
+              </div>
+            </div>
+            <mat-divider inset=“true”></mat-divider>
+            <div fxLayout='row'>
+              <mat-icon class="iconss">room</mat-icon>
+              <div class="loc">Aoukland , california</div>
+              <span class="material-icons iconss">
+                domain_disabled
+              </span>
+              <div class="Morristown-Medical-Center">Morristown-Medical-Center</div>
+            </div>
+            <div fxLayout='row' fxLayoutGap='85px'>
+              <div fxLayout='row'>
+                <mat-icon class="iconss">credit_card</mat-icon>
+                <div class="Online">Online</div>
+              </div>
+              <div fxLayout='row'>
+                <span class="material-icons iconss">
+                  star_outline
+                </span>
+                <div class="Preferred-Doctor"> Preferred-Doctor</div>
+              </div>
+            </div>
+          </div>
+    
+    
+          <div class="cards" fxFlex.xs=100>
+    
+            <div fxLayout='row'>
+              <img id="imgProfile " class="Layer-94"
+                src="../../../assets/FS HTML_CSS LP02 Employee Payroll App Assets/assets/profile-images/Ellipse -5.png">
+              <div>
+                <div class="drname ">Dr. Krish Philips,<span class="drtxt"> M(35)</span></div>
+                <div class="degree">M. D. Medicine, Children Specialist</div>
+              </div>
+            </div>
+    
+    
+            <mat-divider inset=“true”></mat-divider>
+    
+            <div fxLayout='row'>
+              <mat-icon class="iconss">room</mat-icon>
+    
+              <div class="loc">Aoukland , california</div>
+              <span class="material-icons iconss">
+                domain_disabled
+              </span>
+              <div class="Morristown-Medical-Center">Morristown-Medical-Center</div>
+            </div>
+            <div fxLayout='row' fxLayoutGap='85px'>
+              <div fxLayout='row'>
+                <mat-icon class="iconss">credit_card</mat-icon>
+    
+                <div class="Online">Online</div>
+              </div>
+    
+              <div fxLayout='row'>
+                <span class="material-icons iconss">
+                  star_outline
+                </span>
+                <div class="Preferred-Doctor"> Preferred-Doctor</div>
+              </div>
+    
+            </div>
+    
+    
+    
+          </div>
+          <div class="cards" fxFlex.xs=100>
+    
+            <div fxLayout='row'>
+              <img id="imgProfile " class="Layer-94" src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg">
+              <div>
+                <div class="drname ">Dr. Steve Smith,<span class="drtxt"> M(35)</span></div>
+                <div class="degree">M. D. Medicine, Children Specialist</div>
+              </div>
+            </div>
+    
+          
+            <mat-divider inset=“true”></mat-divider>
+    
+            <div fxLayout='row'>
+              <mat-icon class="iconss">room</mat-icon>
+    
+              <div class="loc">Aoukland , california</div>
+              <span class="material-icons iconss">
+                domain_disabled
+              </span>
+              <div class="Morristown-Medical-Center">Morristown-Medical-Center</div>
+            </div>
+            <div fxLayout='row' fxLayoutGap='85px'>
+              <div fxLayout='row'>
+                <mat-icon class="iconss">credit_card</mat-icon>
+    
+                <div class="Online">Online</div>
+              </div>
+    
+              <div fxLayout='row'>
+                <span class="material-icons iconss">
+                  star_outline
+                </span>
+                <div class="Preferred-Doctor"> Preferred-Doctor</div>
+              </div>
+    
+            </div>
+    
+    
+    
+          </div>
+          <div class="cards" fxFlex.xs=100>
+    
+            <div fxLayout='row'>
+              <img id="imgProfile " class="Layer-94"
+                src="../../../assets/FS HTML_CSS LP02 Employee Payroll App Assets/assets/profile-images/Ellipse -2.png">
+              <div>
+                <div class="drname ">Dr. John Diego,<span class="drtxt"> M(35)</span></div>
+                <div class="degree">M. D. Medicine, Children Specialist</div>
+              </div>
+            </div>
+    
+          
+            <mat-divider inset=“true”></mat-divider>
+    
+            <div fxLayout='row'>
+              <mat-icon class="iconss">room</mat-icon>
+    
+              <div class="loc">Aoukland , california</div>
+              <span class="material-icons iconss">
+                domain_disabled
+              </span>
+              <div class="Morristown-Medical-Center">Morristown-Medical-Center</div>
+            </div>
+            <div fxLayout='row' fxLayoutGap='85px'>
+              <div fxLayout='row'>
+                <mat-icon class="iconss">credit_card</mat-icon>
+    
+                <div class="Online">Online</div>
+              </div>
+    
+              <div fxLayout='row'>
+                <span class="material-icons iconss">
+                  star_outline
+                </span>
+                <div class="Preferred-Doctor"> Preferred-Doctor</div>
+              </div>
+    
+            </div>
+    
+    
+          </div>
+          <mat-card class="cards" fxFlex.xs=100 fxLayoutGap="10px">
+    
+            <div fxLayout='row'>
+              <img id="imgProfile " class="Layer-94"
+                src="../../../assets/FS HTML_CSS LP02 Employee Payroll App Assets/assets/profile-images/Ellipse -1.png">
+              <div>
+                <div class="drname ">Dr. John Diego,<span class="drtxt"> M(35)</span></div>
+                <div class="degree">M. D. Medicine, Children Specialist</div>
+              </div>
+            </div>
+    
+       
+            <mat-divider inset=“true”></mat-divider>
+    
+            <div fxLayout='row'>
+              <mat-icon class="iconss">room</mat-icon>
+    
+              <div class="loc">Aoukland , california</div>
+              <span class="material-icons iconss">
+                domain_disabled
+              </span>
+              <div class="Morristown-Medical-Center">Morristown-Medical-Center</div>
+            </div>
+            <div fxLayout='row' fxLayoutGap='85px'>
+              <div fxLayout='row'>
+                <mat-icon class="iconss">credit_card</mat-icon>
+    
+                <div class="Online">Online</div>
+              </div>
+    
+              <div fxLayout='row'>
+                <span class="material-icons iconss">
+                  star_outline
+                </span>
+                <div class="Preferred-Doctor"> Preferred-Doctor</div>
+              </div>
+    
+            </div>
+    
+    
+    
+    
+        </mat-card>
+          <div class="cards" fxFlex.xs=100>
+    
+            <div fxLayout='row'>
+              <img id="imgProfile " class="Layer-94"
+                src="../../../assets/FS HTML_CSS LP02 Employee Payroll App Assets/assets/profile-images/Ellipse -2.png">
+              <div>
+                <div class="drname ">Dr. mary Kom,<span class="drtxt"> M(40),</span></div>
+                <div class="degree">M. D. Medicine, Children Specialist</div>
+              </div>
+            </div>
+    
+           
+            <mat-divider inset=“true”></mat-divider>
+    
+            <div fxLayout='row'>
+              <mat-icon class="iconss">room</mat-icon>
+    
+              <div class="loc">Aoukland , california</div>
+              <span class="material-icons iconss">
+                domain_disabled
+              </span>
+              <div class="Morristown-Medical-Center">Morristown-Medical-Center</div>
+            </div>
+            <div fxLayout='row' fxLayoutGap='85px'>
+              <div fxLayout='row'>
+                <mat-icon class="iconss">credit_card</mat-icon>
+    
+                <div class="Online">Online</div>
+              </div>
+    
+              <div fxLayout='row'>
+                <span class="material-icons iconss">
+                  star_outline
+                </span>
+                <div class="Preferred-Doctor"> Preferred-Doctor</div>
+              </div>
+    
+            </div>
+    
+    
+    
+    
+          </div>
+          <div class="cards" fxFlex.xs=100>
+    
+            <div fxLayout='row'>
+              <img id="imgProfile " class="Layer-94"
+                src="../../../assets/FS HTML_CSS LP02 Employee Payroll App Assets/assets/profile-images/Ellipse -4.png">
+              <div>
+                <div class="drname ">Dr. John Diego,<span class="drtxt"> M(35)</span></div>
+                <div class="degree">M. D. Medicine, Children Specialist</div>
+              </div>
+            </div>
+    
+            <mat-divider inset=“true”></mat-divider>
+    
+            <div fxLayout='row'>
+              <mat-icon class="iconss">room</mat-icon>
+    
+              <div class="loc">Aoukland , california</div>
+              <span class="material-icons iconss">
+                domain_disabled
+              </span>
+              <div class="Morristown-Medical-Center">Morristown-Medical-Center</div>
+            </div>
+            <div fxLayout='row' fxLayoutGap='85px'>
+              <div fxLayout='row'>
+                <mat-icon class="iconss">credit_card</mat-icon>
+    
+                <div class="Online">Online</div>
+              </div>
+    
+              <div fxLayout='row'>
+                <span class="material-icons iconss">
+                  star_outline
+                </span>
+                <div class="Preferred-Doctor"> Preferred-Doctor</div>
+              </div>
+    
+            </div>
+    
+    
+    
+          </div>
+          <div class="cards" fxFlex.xs=100>
+    
+            <div fxLayout='row'>
+              <img id="imgProfile " class="Layer-94" src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg">
+              <div>
+                <div class="drname ">Dr. John Diego,<span class="drtxt"> M(35)</span></div>
+                <div class="degree">M. D. Medicine, Children Specialist</div>
+              </div>
+            </div>
+    
+            <mat-divider inset=“true”></mat-divider>
+    
+            <div fxLayout='row'>
+              <mat-icon class="iconss">room</mat-icon>
+    
+              <div class="loc">Aoukland , california</div>
+              <span class="material-icons iconss">
+                domain_disabled
+              </span>
+              <div class="Morristown-Medical-Center">Morristown-Medical-Center</div>
+            </div>
+            <div fxLayout='row' fxLayoutGap='85px'>
+              <div fxLayout='row'>
+                <mat-icon class="iconss">credit_card</mat-icon>
+    
+                <div class="Online">Online</div>
+              </div>
+    
+              <div fxLayout='row'>
+                <span class="material-icons iconss">
+                  star_outline
+                </span>
+                <div class="Preferred-Doctor"> Preferred-Doctor</div>
+              </div>
+    
+            </div>
+    
+    
+    
+    
+          </div>
+        </div>
+    
+    
+      </mat-card>
+</div>
+
+ 
