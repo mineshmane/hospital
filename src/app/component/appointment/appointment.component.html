@@ -7,7 +7,7 @@
 
         <div fxLayout='row wrap'>
             <div class="selectcard" fxFlex.xs=100>
-              <mat-form-field class="example-full-width" style="width: 320px;" fxFlex.xs=100>
+              <mat-form-field class="example-full-width" style="width: 320px;" fxFlex=100>
                 <input matInput placeholder="location" value="City,state or Zip">
                 <mat-icon matSuffix>search</mat-icon>
               </mat-form-field>
@@ -23,7 +23,7 @@
         
             </div>
             <div class="selectcard"  fxFlex.xs=100>
-              <mat-form-field style="width: 250px;" fxFlex.xs=100>
+              <mat-form-field style="width: 250px;" fxFlex=100>
                 <mat-label class="lbj">Select Specialities</mat-label>
                 <mat-select [(ngModel)]="selectedValue" name="food">
                   <mat-option *ngFor="let food of foods" [value]="food.value">
@@ -33,9 +33,9 @@
               </mat-form-field>
             </div>
             <div class="selectcard"  fxFlex.xs=100>
-              <mat-form-field style="width: 200px;"  fxFlex.xs=100>
+              <mat-form-field class="insu"   fxFlex=100>
                 <mat-label>Insurance</mat-label>
-                <mat-select [(ngModel)]="selectedValue" name="food">
+                <mat-select  [(ngModel)]="selectedValue" name="food">
                   <mat-option *ngFor="let food of foods" [value]="food.value">
                     {{food.viewValue}}
                   </mat-option>
@@ -43,7 +43,7 @@
               </mat-form-field>
             </div>
             <div class="selectcard"  fxFlex.xs=100>
-              <mat-form-field style="width:220px"  fxFlex.xs=100>
+              <mat-form-field   fxFlex=100>
                 <mat-label>Select languages</mat-label>
                 <mat-select [(ngModel)]="selectedValue" name="food">
                   <mat-option *ngFor="let food of foods" [value]="food.value">
@@ -52,17 +52,17 @@
                 </mat-select>
               </mat-form-field>
             </div>
-            <div class="labelSelect" fxLayout='column'  fxFlex.xs=100>
+            <div class="labelSelect" fxLayout='column'  >
               <mat-label class="wd">Gender</mat-label>
         
-              <mat-radio-group aria-label="Select an option" fxLayoutGap="24px"  fxFlex.xs=100>
+              <mat-radio-group aria-label="Select an option" fxLayoutGap="24px"  fxFlex=100>
         
                 <mat-radio-button value="m">Male</mat-radio-button>
                 <mat-radio-button value="f">Female</mat-radio-button>
               </mat-radio-group>
             </div>
             <div class="selectcard"  fxFlex.xs=100>
-              <mat-form-field style="width: 300px;"  fxFlex.xs=100>
+              <mat-form-field style="width: 300px;"  fxFlex=100>
                 <mat-label>Select Affiliations</mat-label>
                 <mat-select [(ngModel)]="selectedValue" name="food">
                   <mat-option *ngFor="let food of foods" [value]="food.value">
@@ -72,7 +72,7 @@
               </mat-form-field>
             </div>
             <div class="selectcard"  fxFlex.xs=100>
-              <mat-form-field style="width: 230px;"  fxFlex.xs=100>
+              <mat-form-field   fxFlex=100>
                 <mat-label>Select Provider Types</mat-label>
                 <mat-select [(ngModel)]="selectedValue" name="food">
                   <mat-option *ngFor="let food of foods" [value]="food.value">
@@ -82,7 +82,7 @@
               </mat-form-field>
             </div>
             <div class="selectcard"  fxFlex.xs=100>
-              <mat-form-field style="width: 240px;"  fxFlex.xs=100>
+              <mat-form-field style="width: 240px;"  fxFlex=100>
                 <mat-label>Select Provider Sub Types</mat-label>
                 <mat-select [(ngModel)]="selectedValue" name="food">
                   <mat-option *ngFor="let food of foods" [value]="food.value">
