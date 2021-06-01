@@ -23,7 +23,7 @@
         
             </div>
             <div class="selectcard"  fxFlex.xs=100>
-              <mat-form-field style="width: 250px;" fxFlex=100>
+              <mat-form-field  fxFlex=100>
                 <mat-label class="lbj">Select Specialities</mat-label>
                 <mat-select [(ngModel)]="selectedValue" name="food">
                   <mat-option *ngFor="let food of foods" [value]="food.value">
